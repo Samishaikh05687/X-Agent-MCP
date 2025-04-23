@@ -36,12 +36,16 @@ server.tool(
 
 server.tool(
     "createPost",
-    "Create a post on X formally known as Twitter ", {
-    status: z.string()
-}, async (arg) => {
-    const { status } = arg;
-    return createPost(status);
-})
+    "Create a post on X formally known as Twitter",
+    {
+      status: z.string()
+    },
+    async (arg) => {
+      const { status } = arg;
+      console.log("Tool called with status:", status);
+      return await createPost(status);
+    }
+  )
 
 
 // to support multiple simultaneous connections we have a lookup object from
