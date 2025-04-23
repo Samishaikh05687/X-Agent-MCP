@@ -27,6 +27,23 @@ This server provides a lightweight, Express-based implementation of the MCP serv
    git clone https://github.com/your-username/x-post-creator-mcp-server.git
    cd x-post-creator-mcp-server
 
+2. **Install dependencies**
+
+   ```bash
+      npm install
+
+3. **Create a .env file in the root directory with your X API credentials:**
+
+   ```bash
+    X_API_KEY=your_api_key
+    X_API_SECRET=your_api_secret
+    X_ACCESS_TOKEN=your_access_token
+    X_ACCESS_SECRET=your_access_secret
+   
+4. **Start the server**
+   
+    ```bash
+        node server.js
 ---
 
 ## 📦 Requirements
